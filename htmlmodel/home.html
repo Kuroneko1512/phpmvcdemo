@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home View</title>
+
+    <!-- icon library -->
+    <link rel="shortcut icon" href="./img/NekoSports_logo.svg" type="image/svg+xml">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./home.css">
+</head>
+<body>
+    <div class="container">
+        <!-- header start -->
+        <header>
+            <!-- top header -->
+            <div class="logo">
+                <img src="./img/NekoSports.svg" alt="">
+                
+            </div>
+            
+            <form action="">
+                <div class="search">
+                    <input type="text" name="" placeholder="Tìm kiếm sản phẩm" required>
+                    <button type="submit">
+                        <i class="fa fa-search" aria-hidden="true"></i>
+                    </button>
+                </div>
+            </form>
+            <div class="right">
+                <div class="account-icon" id="account">  
+                    <p>Tài khoản</p>
+                    <i class="fa-regular fa-user" aria-hidden="true"></i>
+                </div>
+                <div class="love-icon">
+                    <p>Yêu thích</p>
+                    <i class="fa-regular fa-heart" aria-hidden="true"></i>
+                </div>
+                <div class="cart-icon">
+                    <p>Giỏ hàng</p>
+                    <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                    <div class="cart-count">
+                        <span class="count" id="count">99</span>
+                    </div>                    
+                </div>
+            </div>
+            
+        </header>
+        <!-- header end -->
+
+        <!-- nav start-->
+        <nav>
+            <div class="horizontal">
+                <div class="horizontal-menu">
+                    <ul>
+                        <li class="nav-item">
+                            <a href="">Giới Thiệu</a>
+                        </li>
+        
+                        <li class="nav-item">
+                            <a href="">Nam
+                                <i class="fa-solid fa-angle-down" aria-hidden="true"></i>
+                            </a>
+                            <ul class="menu-dropdown-lv1">
+                                <li class="first nav-dropdown-item-lv1">
+                                    <a href="">Giày Chạy Bộ
+                                        <i class="fa-solid fa-angle-right" aria-hidden="true"></i>
+                                    </a>
+                                    <ul class="menu-dropdown-lv2">
+                                        <li class="nav-dropdown-item-lv2">
+                                            <a href="">Giày Luyện Tập</a>
+                                        </li>                                
+                                        <li class="nav-dropdown-item-lv2">
+                                            <a href="">Giày Thi Đấu</a>
+                                        </li>
+                                        <li class="nav-dropdown-item-lv2">
+                                            <a href="">Giày Chạy Hàng Ngày</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="nav-dropdown-item-lv1">
+                                    <a href="">Giày Chạy Địa Hình</a>
+                                </li>
+                                <li class="nav-dropdown-item-lv1">
+                                    <a href="">Giày Leo Núi</a>
+                                </li>
+                                <li class="nav-dropdown-item-lv1">
+                                    <a href="">Dép Chạy Bộ</a>
+                                </li>
+                                <li class="nav-dropdown-item-lv1">
+                                    <a href="">Áo Chạy Bộ</a>
+                                </li>
+                                <li class="nav-dropdown-item-lv1">
+                                    <a href="">Quần Chạy Bộ</a>
+                                </li>
+                                <li class="nav-dropdown-item-lv1">
+                                    <a href="">Quần Áo Triathlon</a>
+                                </li>
+                            </ul>
+                        </li>
+        
+                        <li class="nav-item">
+                            <a href="">Nữ
+                                <i class="fa-solid fa-angle-down" aria-hidden="true"></i>
+                            </a>
+                            <ul class="menu-dropdown-lv1">
+                                <li class="first nav-dropdown-item-lv1">
+                                    <a href="">Giày Chạy Bộ
+                                        <i class="fa-solid fa-angle-right" aria-hidden="true"></i>
+                                    </a>
+                                    <ul class="menu-dropdown-lv2">
+                                        <li class="nav-dropdown-item-lv2">
+                                            <a href="">Giày Luyện Tập</a>
+                                        </li>                                
+                                        <li class="nav-dropdown-item-lv2">
+                                            <a href="">Giày Thi Đấu</a>
+                                        </li>
+                                        <li class="nav-dropdown-item-lv2">
+                                            <a href="">Giày Chạy Hàng Ngày</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="nav-dropdown-item-lv1">
+                                    <a href="">Giày Chạy Địa Hình</a>
+                                </li>
+                                <li class="nav-dropdown-item-lv1">
+                                    <a href="">Giày Leo Núi</a>
+                                </li>
+                                <li class="nav-dropdown-item-lv1">
+                                    <a href="">Dép Chạy Bộ</a>
+                                </li>
+                                <li class="nav-dropdown-item-lv1">
+                                    <a href="">Áo Chạy Bộ</a>
+                                </li>
+                                <li class="nav-dropdown-item-lv1">
+                                    <a href="">Áo Ngực Chạy Bộ (Bra)</a>
+                                </li>
+                                <li class="nav-dropdown-item-lv1">
+                                    <a href="">Quần Chạy Bộ</a>
+                                </li>
+                                <li class="nav-dropdown-item-lv1">
+                                    <a href="">Quần Áo Triathlon</a>
+                                </li>
+                            </ul>
+                        </li>
+        
+                        <li class="nav-item">
+                            <a href="">Phụ Kiện
+                                <i class="fa-solid fa-angle-down" aria-hidden="true"></i>
+                            </a>
+                            <ul class="menu-dropdown-lv1">
+                                <li class="first nav-dropdown-item-lv1">
+                                    <a href="">Mũ Chạy Bộ
+                                        <i class="fa-solid fa-angle-right" aria-hidden="true"></i>
+                                    </a>
+                                    <ul class="menu-dropdown-lv2">
+                                        <li class="nav-dropdown-item-lv2">
+                                            <a href="">Mũ nửa đầu</a>
+                                        </li>                                
+                                        <li class="nav-dropdown-item-lv2">
+                                            <a href="">Mũ Vành Rộng</a>
+                                        </li>
+                                        <li class="nav-dropdown-item-lv2">
+                                            <a href="">Mũ cả đầu</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="nav-dropdown-item-lv1">
+                                    <a href="">Kính Chạy Bộ
+                                        <i class="fa-solid fa-angle-right" aria-hidden="true"></i>
+                                    </a>
+                                    <ul class="menu-dropdown-lv2">
+                                        <li class="nav-dropdown-item-lv2">
+                                            <a href="">Kính kèm gọng cận</a>
+                                        </li>                                
+                                        <li class="nav-dropdown-item-lv2">
+                                            <a href="">Kính Phân Cực</a>
+                                        </li>
+                                        <li class="nav-dropdown-item-lv2">
+                                            <a href="">Kính Râm</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="nav-dropdown-item-lv1">
+                                    <a href="">Khăn Ống Đa Năng</a>
+                                </li>
+                                <li class="nav-dropdown-item-lv1">
+                                    <a href="">Đèn Chạy Địa Hình</a>
+                                </li>
+                                <li class="nav-dropdown-item-lv1">
+                                    <a href="">Vest Chạy Bộ</a>
+                                </li>                        
+                                <li class="nav-dropdown-item-lv1">
+                                    <a href="">Đai Chạy Bộ</a>
+                                </li>
+                                <li class="nav-dropdown-item-lv1">
+                                    <a href="">Gậy Chạy Địa Hình</a>
+                                </li>
+                                <li class="nav-dropdown-item-lv1">
+                                    <a href="">Tất Chạy Bộ
+                                        <i class="fa-solid fa-angle-right" aria-hidden="true"></i>
+                                    </a>
+                                    <ul class="menu-dropdown-lv2">
+                                        <li class="nav-dropdown-item-lv2">
+                                            <a href="">Tất Triathlon</a>
+                                        </li>                                
+                                        <li class="nav-dropdown-item-lv2">
+                                            <a href="">Tất Xỏ Ngón</a>
+                                        </li>                                
+                                    </ul>
+                                </li>
+                                <li class="nav-dropdown-item-lv1">
+                                    <a href="">Bó Calf</a>
+                                </li>
+                                <li class="nav-dropdown-item-lv1">
+                                    <a href="">Phụ Kiện Khác</a>
+                                </li>
+                            </ul>
+                        </li>
+        
+                        <li class="nav-item">
+                            <a href="">Đồng Hồ - Tai Nghe
+                                <i class="fa-solid fa-angle-down" aria-hidden="true"></i>
+                            </a>
+                            <ul class="menu-dropdown-lv1">
+                                <li class="first nav-dropdown-item-lv1">
+                                    <a href="">Đồng Hồ Coros</a>                            
+                                </li>
+                                <li class="nav-dropdown-item-lv1">
+                                    <a href="">Đồng Hồ Garmin</a>
+                                </li>
+                                <li class="nav-dropdown-item-lv1">
+                                    <a href="">Tai Nghe Shokz</a>
+                                </li>
+                            </ul>
+                        </li>
+        
+                        <li class="nav-item">
+                            <a href="">Dinh Dưỡng
+                                <i class="fa-solid fa-angle-down" aria-hidden="true"></i>
+                            </a>
+                            <ul class="menu-dropdown-lv1">
+                                <li class="first nav-dropdown-item-lv1">
+                                    <a href="">Gel Năng Lượng</a>                            
+                                </li>
+                                <li class="nav-dropdown-item-lv1">
+                                    <a href="">Bột Năng Lượng</a>
+                                </li>
+                                <li class="nav-dropdown-item-lv1">
+                                    <a href="">Phục Hồi</a>
+                                </li>
+                                <li class="nav-dropdown-item-lv1">
+                                    <a href="">Muối</a>
+                                </li>
+                                <li class="nav-dropdown-item-lv1">
+                                    <a href="">Viên Sủi</a>
+                                </li>
+                                <li class="nav-dropdown-item-lv1">
+                                    <a href="">Thanh Năng Lượng</a>
+                                </li>
+                            </ul>
+                        </li>
+        
+                        <li class="nav-item">
+                            <a href="">Phục Hồi
+                                <i class="fa-solid fa-angle-down" aria-hidden="true"></i>
+                            </a>
+                            <ul class="menu-dropdown-lv1">
+                                <li class="first nav-dropdown-item-lv1">
+                                    <a href="">Súng Massage</a>                            
+                                </li>
+                                <li class="nav-dropdown-item-lv1">
+                                    <a href="">Bó Gối</a>
+                                </li>
+                                <li class="nav-dropdown-item-lv1">
+                                    <a href="">Bó Cổ Chân</a>
+                                </li>
+                                <li class="nav-dropdown-item-lv1">
+                                    <a href="">Băng Dán Cơ</a>
+                                </li>
+                            </ul>
+                        </li>
+                        
+                        <li class="nav-item">
+                            <a href="">Phục Hồi
+                                <i class="fa-solid fa-angle-down" aria-hidden="true"></i>
+                            </a>
+                            <ul class="menu-dropdown-lv1">
+                                <li class="first nav-dropdown-item-lv1">
+                                    <a href="">Súng Massage</a>                            
+                                </li>
+                                <li class="nav-dropdown-item-lv1">
+                                    <a href="">Bó Gối</a>
+                                </li>
+                                <li class="nav-dropdown-item-lv1">
+                                    <a href="">Bó Cổ Chân</a>
+                                </li>
+                                <li class="nav-dropdown-item-lv1">
+                                    <a href="">Băng Dán Cơ</a>
+                                </li>
+                            </ul>
+                        </li>
+        
+                        <li class="nav-item">
+                            <a href="">Thương Hiệu
+                                <i class="fa-solid fa-angle-down" aria-hidden="true"></i>
+                            </a>
+                            <ul class="menu-dropdown-lv1">
+                                <li class="first nav-dropdown-item-lv1">
+                                    <a href="">Nike</a>                            
+                                </li>
+                                <li class="nav-dropdown-item-lv1">
+                                    <a href="">Addidas</a>
+                                </li>
+                                <li class="nav-dropdown-item-lv1">
+                                    <a href="">HoKa</a>
+                                </li>
+                                <li class="nav-dropdown-item-lv1">
+                                    <a href="">Saucony</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>          
+        </nav>
+        <!-- nav end -->
+
+        <!-- Banner Start -->
+        <section class="banner">
+            <div class="banner-container">
+                <div class="banner-slide">
+                    <img id="banner_img" src="" alt="Banner Image">
+                </div>
+                <a class="prev bannerL"><i class="fa-solid fa-angle-double-left"></i></a>
+                <a class="next bannerR"><i class="fa-solid fa-angle-double-right"></i></a>
+            </div>
+            <div id="dots-container" class="dots-container"></div>
+        </section>
+        <!-- Banner End -->
+
+        <!-- main start -->
+        <main>
+            <!-- body start -->
+            <div class="body">
+                
+                <!-- Category Start -->
+                <section class="category">
+                    <section class="category-section">
+                        <h2 class="section-title">
+                            <span class="title-bg">Categories</span>
+                        </h2>
+                        <div class="category-grid">
+                            <div class="category-item">
+                                <a href="#">
+                                    <div class="category-img">
+                                        <img src="./img/sp1.jpg" alt="Category Image">
+                                    </div>
+                                    <div class="category-info">
+                                        <h6>Category Name</h6>
+                                        <p>100 Products</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="category-item">
+                                <a href="#">
+                                    <div class="category-img">
+                                        <img src="./img/sp1.jpg" alt="Category Image">
+                                    </div>
+                                    <div class="category-info">
+                                        <h6>Category Name</h6>
+                                        <p>100 Products</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="category-item">
+                                <a href="#">
+                                    <div class="category-img">
+                                        <img src="./img/sp1.jpg" alt="Category Image">
+                                    </div>
+                                    <div class="category-info">
+                                        <h6>Category Name</h6>
+                                        <p>100 Products</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="category-item">
+                                <a href="#">
+                                    <div class="category-img">
+                                        <img src="./img/sp1.jpg" alt="Category Image">
+                                    </div>
+                                    <div class="category-info">
+                                        <h6>Category Name</h6>
+                                        <p>100 Products</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="category-item">
+                                <a href="#">
+                                    <div class="category-img">
+                                        <img src="./img/sp1.jpg" alt="Category Image">
+                                    </div>
+                                    <div class="category-info">
+                                        <h6>Category Name</h6>
+                                        <p>100 Products</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="category-item">
+                                <a href="#">
+                                    <div class="category-img">
+                                        <img src="./img/sp1.jpg" alt="Category Image">
+                                    </div>
+                                    <div class="category-info">
+                                        <h6>Category Name</h6>
+                                        <p>100 Products</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="category-item">
+                                <a href="#">
+                                    <div class="category-img">
+                                        <img src="./img/sp1.jpg" alt="Category Image">
+                                    </div>
+                                    <div class="category-info">
+                                        <h6>Category Name</h6>
+                                        <p>100 Products</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="category-item">
+                                <a href="#">
+                                    <div class="category-img">
+                                        <img src="./img/sp1.jpg" alt="Category Image">
+                                    </div>
+                                    <div class="category-info">
+                                        <h6>Category Name</h6>
+                                        <p>100 Products</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <!-- Các category-item khác -->
+                        </div>
+                    </section>
+                </section>
+                
+                <!-- Category End -->
+
+                <!-- New Products Start -->
+                <section class="new-products">
+                    <section class="product-section">
+                        <h2 class="section-title">
+                            <span class="title-bg">News Products</span>
+                        </h2>
+                        <div class="product-grid">
+                            <div class="product-item">
+                                <div class="product-img">
+                                    <img src="./img/Products/S20964-213_1.jpeg" alt="Product Image">
+                                    <div class="product-overlay">
+                                        <div class="product-actions">
+                                            <a href="#" class="action-btn"><i class="fa fa-shopping-cart"></i></a>
+                                            <a href="#" class="action-btn"><i class="far fa-heart"></i></a>
+                                            <a href="#" class="action-btn"><i class="fa fa-search"></i></a>
+                                        </div>
+                                    </div>                                
+                                </div>
+                                <div class="product-info">
+                                    <a href="#" class="product-name">Product Name Goes Here</a>
+                                    <div class="product-price">
+                                        <span class="price">$123.00</span>
+                                        <span class="old-price">$123.00</span>
+                                    </div>
+                                    <div class="product-rating">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <span>(99)</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Các sản phẩm khác -->
+                        </div>
+                    </section>
+                </section>                
+                <!-- New Products End -->
+
+                <!-- Services start -->
+                <section class="services">
+                    <div class="services-container">
+                        <div class="service">
+                            <div class="service-icon">
+                                <i class="fa-solid fa-check fa-1x"></i>
+                            </div>
+                            <h5 class="service-heading">Quality Product</h5>
+                        </div>
+                        <div class="service">
+                            <div class="service-icon">
+                                <i class="fa-solid fa-shipping-fast fa-1x" aria-hidden="true"></i>
+                            </div>
+                            <h5 class="service-heading">Free Shipping</h5>
+                        </div>
+                        <div class="service">
+                            <div class="service-icon">
+                                <i class="fa-solid fa-exchange-alt fa-1x"></i>
+                            </div>
+                            <h5 class="service-heading">14-Day Return</h5>
+                        </div>
+                        <div class="service">
+                            <div class="service-icon">
+                                <i class="fa-solid fa-phone-volume fa-1x"></i>
+                            </div>
+                            <h5 class="service-heading">24/7 Support</h5>
+                        </div>
+                    </div>
+                </section>
+                <!-- Services end -->
+
+                <!-- Best Sales Products Start -->
+                <section class="best-sales-products">
+                    <section class="product-section">
+                        <h2 class="section-title">
+                            <span class="title-bg">Best Sales Products</span>
+                        </h2>
+                        <div class="product-grid">
+                            <div class="product-item">
+                                <div class="product-img">
+                                    <img src="./img/Products/S20964-215_1.jpeg" alt="Product Image">
+                                    <div class="product-overlay">
+                                        <div class="product-actions">
+                                            <a href="#" class="action-btn"><i class="fa fa-shopping-cart"></i></a>
+                                            <a href="#" class="action-btn"><i class="far fa-heart"></i></a>
+                                            <a href="#" class="action-btn"><i class="fa fa-search"></i></a>
+                                        </div>
+                                    </div>                                
+                                </div>
+                                <div class="product-info">
+                                    <a href="#" class="product-name">Product Name Goes Here</a>
+                                    <div class="product-price">
+                                        <span class="price">$123.00</span>
+                                        <span class="old-price">$123.00</span>
+                                    </div>
+                                    <div class="product-rating">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <span>(99)</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Các sản phẩm khác -->
+                        </div>
+                    </section>
+                </section>  
+                <!-- Best Sales Products End -->
+            </div>
+            <!-- body end -->
+
+            <!-- Vendor Carousel Start -->
+            <div class="vendor-carousel">
+                <div class="item"><img src="./img/Brand/brands_1.jpeg" alt=""></div>
+                <div class="item"><img src="./img/Brand/brands_2.jpeg" alt=""></div>
+                <div class="item"><img src="./img/Brand/brands_3.jpeg" alt=""></div>
+                <div class="item"><img src="./img/Brand/brands_4.jpeg" alt=""></div>
+                <div class="item"><img src="./img/Brand/brands_5.jpeg" alt=""></div>
+                <div class="item"><img src="./img/Brand/brands_6.jpeg" alt=""></div>
+                <div class="item"><img src="./img/Brand/brands_7.jpeg" alt=""></div>
+                <div class="item"><img src="./img/Brand/brands_8.jpeg" alt=""></div>
+                <div class="item"><img src="./img/Brand/brands_9.jpeg" alt=""></div>
+                <div class="item"><img src="./img/Brand/brands_10.jpeg" alt=""></div>
+                <div class="item"><img src="./img/Brand/brands_11.jpeg" alt=""></div>
+                <div class="item"><img src="./img/Brand/brands_12.jpeg" alt=""></div>
+                <div class="item"><img src="./img/Brand/brands_13.jpeg" alt=""></div>
+                <div class="item"><img src="./img/Brand/brands_14.jpeg" alt=""></div>
+                <div class="item"><img src="./img/Brand/brands_15.jpeg" alt=""></div>
+                <div class="item"><img src="./img/Brand/brands_16.jpeg" alt=""></div>
+                <div class="item"><img src="./img/Brand/brands_17.jpeg" alt=""></div>
+                <div class="item"><img src="./img/Brand/brands_18.jpeg" alt=""></div>
+                <div class="item"><img src="./img/Brand/brands_19.jpeg" alt=""></div>
+                <div class="item"><img src="./img/Brand/brands_20.jpeg" alt=""></div>
+                <div class="item"><img src="./img/Brand/brands_21.jpeg" alt=""></div>
+                <div class="item"><img src="./img/Brand/brands_22.jpeg" alt=""></div>                
+            </div>
+            <!-- Vendor Carousel End -->
+        </main>
+        <!-- main end -->
+
+        <!-- footer start -->
+        <footer>
+            <div class="footer-area">
+                <div class="footer-row">
+
+                    <div class="footer-col">
+                        <h5 class="footer-heading">Giới Thiệu</h5>
+                        <p class="footer-text">
+                            NekoSports chuyên giày dép, quần áo và phụ kiện chạy bộ/chạy địa hình chính hãng đến từ các thương hiệu hàng đầu thế giới. 
+                            Chúng tôi luôn có sẵn những dòng sản phẩm mới nhất, tối ưu và hiệu suất cao dành cho runners. Đội ngũ nhân viên trẻ trung, nhiệt huyết, là những chân chạy đã được tích luỹ nhiều kinh nghiệm tập luyện và thi đấu sẽ mang đến tinh thần phục vụ chuyên nghiệp và chuyên sâu nhất cho khách hàng.
+                        </p>
+                        <address class="footer-address">
+                            <p><i class="footer-icon fa fa-map-marker-alt"></i> 123 Hai Bà Trưng, Hà Nội</p>
+                            <p><i class="footer-icon fa fa-envelope"></i> NekoSports@gmail.com</p>
+                            <p><i class="footer-icon fa fa-phone-alt"></i> +8435 123 456</p>
+                        </address>
+                    </div>
+    
+                    <div class="footer-col">
+                        <div class="footer-row">
+                            <div class="footer-subcol">
+                                <h5 class="footer-heading">Quick Shop</h5>
+                                <nav class="footer-nav">
+                                    <a href="#" class="footer-link"><i class="footer-icon fa fa-angle-right"></i> Home</a>
+                                    <a href="#" class="footer-link"><i class="footer-icon fa fa-angle-right"></i> Our Shop</a>
+                                    <a href="#" class="footer-link"><i class="footer-icon fa fa-angle-right"></i> Shop Detail</a>
+                                    <a href="#" class="footer-link"><i class="footer-icon fa fa-angle-right"></i> Shopping Cart</a>
+                                    <a href="#" class="footer-link"><i class="footer-icon fa fa-angle-right"></i> Checkout</a>
+                                    <a href="#" class="footer-link"><i class="footer-icon fa fa-angle-right"></i> Contact Us</a>
+                                </nav>
+                            </div>
+
+                            <div class="footer-subcol">
+                                <h5 class="footer-heading">Hướng Dẫn</h5>
+                                <nav class="footer-nav">
+                                    <a href="#" class="footer-link"><i class="footer-icon fa fa-angle-right"></i> Chính Sách Thanh Toán</a>
+                                    <a href="#" class="footer-link"><i class="footer-icon fa fa-angle-right"></i> Chính Sách Vận Chuyển</a>
+                                    <a href="#" class="footer-link"><i class="footer-icon fa fa-angle-right"></i> Chính Sách Đổi Trả</a>
+                                    <a href="#" class="footer-link"><i class="footer-icon fa fa-angle-right"></i> Chính Sách Bảo Hành</a>
+                                    <a href="#" class="footer-link"><i class="footer-icon fa fa-angle-right"></i> Cách Chọn Size Giầy</a>
+                                </nav>
+                            </div>
+                            
+                        </div>
+                    </div>
+    
+                    <div class="footer-col">
+                        <h5 class="footer-heading">Thông Tin</h5>
+                        <p class="footer-text">Nhập Email để nhận chia sẻ về chạy bộ và tin tức khuyến mãi mới nhất</p>
+                        <nav class="footer-nav">
+                            <form class="footer-form">
+                                <input type="text" class="footer-input" placeholder="Your Email Address">
+                                <button type="submit" class="footer-btn">Đăng Ký</button>
+                            </form>
+                        </nav>
+                        <h6 class="footer-subheading">Kết Nối Với Chúng Tôi</h6>
+                        <div class="footer-social">                            
+                            <a href="#" class="footer-social-link"><i class="fa-brands fa-twitter fa-1x"></i></a>
+                            <a href="#" class="footer-social-link"><i class="fa-brands fa-facebook-f fa-1x"></i></a>
+                            <a href="#" class="footer-social-link"><i class="fa-brands fa-instagram fa-1x"></i></a>
+                            <a href="#" class="footer-social-link"><i class="fa-brands fa-tiktok fa-1x"></i></a>
+                            <a href="#" class="footer-social-link"><i class="fa-brands fa-youtube fa-1x"></i></a>
+                            <a href="#" class="footer-social-link"><i class="fa-brands fa-telegram fa-1x"></i></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="footer-copyright">
+                    <p >&copy; 2024 NekoSports. All rights reserved.</p> 
+                </div>
+
+            </div>                     
+        </footer>
+        <!-- footer end -->
+    </div>
+
+    <!-- Back to Top -->
+    <a href="#" class="back-to-top" id="scrollToTopBtn" hidden>
+        <i class="fa-solid fa-angles-up"></i>
+    </a>
+    <!-- js library -->
+    <script src="./home.js"></script>
+    <script src="./slide.js"></script>
+    <script src="./vendor_carousel.js"></script>
+</body>
+</html>

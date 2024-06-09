@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="admin.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Varela+Round">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="containers">
+        <div class="menu">
+          
+        </div>
+        <div class="sidebar">
+                <div class="out">
+                   <button><a class="btn_out"><i class="fa-solid fa-x"></i></a></button>
+                </div>
+                <div class="user">
+                    <div class="mb">
+                        <div class="box_title">TÀI KHOẢN</div>
+                        <div class="box_content form_account">
+                            <form action="#" method="POST">
+                            <h4>Tên đăng nhập</h4>
+                            <input type="text" name="user" id="">
+                            <h4>Mật khẩu</h4>
+                            <input type="password" name="pass" id=""><br>
+                            <input type="checkbox" name="" id="">Ghi nhớ tài khoản?
+                           <br><input type="submit" value="Đăng nhập"></form>
+                           <li class="form_li"><a href="#">Quên mật khẩu</a></li>
+                           <li class="form_li"><a href="#">Đăng kí thành viên</a></li>
+        
+                        </div>
+                    <h2>aaaa</h2>
+                    <ul>
+                        <li><a >đăng nhập</a></li>
+                       
+                         </div>
+                        <li>
+                            <a >đăng ký</a></li>
+                     
+                    </ul>
+                </div>
+                <div class="categories">
+                    <h2>aaaa</h2>
+                    <ul>
+                        <li><a href="">abc</a></li>
+                        <li><a href="">abc</a></li>
+                     
+                    </ul>
+                </div>
+        </div>
+        
+        <div class="header">
+            <div class="header_content center">
+                <div class="home"><button><a href="">Trang Chủ</a></button></div>
+                <div class="right_menu">
+                    <form action="" method="post">
+                        <input type="text">
+                        <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    </form>
+                    <c><a href=""><i class="fa-solid fa-cart-shopping"></i></a></button>
+                    <button> <a class="btn_menu"><i class="fa-solid fa-bars"></i></a></button>
+                </div>
+              
+               
+
+            </div>
+
+        </div>
+      
+        <article class="center" style="height: 100vh;">
+                  
+            <h1 class="text-center m-5">EDIT PRODUCT</h1>
+            <form action="" method="post" enctype="multipart/form-data">
+                <div class="mb-3 text-center">
+                    <img class="rounded-3" src="../public/img/" alt="" style="width:500px;height: 200px">
+                </div>
+                <div class="mb-3">
+                    <label for="name" class="form-label">Name product</label>
+                    <input type="text" class="form-control" id="name" name="name" aria-describedby="name" value="">
+                    <div id="name" class="form-text" style="color: red">Tên không được để trống</div>
+                </div>
+                <div class="mb-3">
+                    <label for="price" class="form-label">Price product</label>
+                    <input type="number" class="form-control" id="price" name="price" value="<?=$row['price_pro']?>">
+                    <div id="price" class="form-text" style="color: red">Giá không được để trống</div>
+                </div>
+                <div class="mb-3">
+                    <label for="price" class="form-label">Quantity</label>
+                    <input type="number" class="form-control" id="price" name="quantity" value="<?=$row['qt_pro']?>">
+                    <div id="price" class="form-text" style="color: red">Giá không được để trống</div>
+                </div>
+                <div class="mb-3">
+                    <label for="price" class="form-label">Description</label>
+                    <input type="text" class="form-control" id="price" name="description" value="">
+                    <div id="price" class="form-text" style="color: red">Giá không được để trống</div>
+                </div>
+                <div class="mb-3">
+                    <label for="price" class="form-label">category</label>
+                    <select  class="form-select" name="category" id="" value=>
+                       
+                        <option  value="" ></option>
+                      
+                  
+                    </select>
+                   
+                </div>
+        
+                <div class="mb-3">
+                    <label for="image" class="form-label">Image product</label>
+                    <input type="file" class="form-control" id="image" name="image" >
+                    <div id="image" class="form-text" style="color: red">Ảnh không được để trống</div>
+                </div>
+                <button type="submit" class="btn btn-primary" name="btnSubmit">Submit</button>
+                <a class="mx-2 px-3 py-2 bg-danger rounded-3 text-decoration-none text-white" href="list.php">home</a>
+            </form>
+
+           
+            
+        </article>
+        <footer>
+            copyright cuongntph47461
+        </footer>
+    </div>
+</body>
+<script src="main.js"></script>
+</html>
