@@ -9,7 +9,7 @@
             <a href="#" class="tab-link">Bình luận và đánh giá</a>
           </div>
           <div class="nav-tab-content">
-            <div class="tab-pane tab-active tab-show" id="tab-pane-2">
+            <div class="tab-pane tab-active tab-show" id="tab-pane-1">
               <form action="index.php?controller=comment&action=add&id=<?= $id ?>" method="post">
                 <div class="form-group">
                   <textarea class="form-control" name="content"></textarea>
@@ -34,9 +34,16 @@
                                 
                                 <div class="nav-tab-content">
                                     <div class="tab-pane tab-active tab-show" id="tab-pane-1">
-                                        <p><?= $data['user_name'] ?> <br></p>
-                                        <p><?= $data['content'] ?></p>
-                                        <p><?= $data['date_create'] ?></p>
+                                      <div class="comment">
+                                          <div class="comment-header">
+                                              <div class="comment-author"><?= $data['user_name'] ?></div>
+                                              <div class="comment-date"><?= $data['date_create'] ?></div>
+                                          </div>
+                                          <div class="comment-body">
+                                              <p><?= $data['content'] ?></p>
+                                          </div>
+                                      </div>
+                                        
                                     </div>
                                   
                                 </div>

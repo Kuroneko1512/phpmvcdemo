@@ -55,7 +55,7 @@ function product_add()
       "product_img" => $img,
     );
     $id = add_product($arr);
-    
+
     $dir = './lib/img/';
     move_uploaded_file($_FILES['image']['tmp_name'], $dir . $img);
     add_product_img($id, $img);
@@ -67,22 +67,52 @@ function product_editview($id)
   Authen();
   $data = get_product($id);
   $data_cate = get_categories();
-  echo render_pro_edit($data,$data_cate);
+  echo render_pro_edit($data, $data_cate);
 }
 
 function product_edit($id)
 {
   Authen();
   if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    $file = $_FILES["image"];
 
-    $arr = array(
-      "product_name" => $_POST['name'],
-      "product_price" => $_POST['price'],
-      "product_des" =>  $_POST['description'],
-      "product_quantity" => $_POST['quantity'],
-      "category_id" => $_POST['category'],
-    );
-    edit_product($arr,$id);
+    if (!empty($file["name"])) {
+      $image =  $file["name"];
+
+      $target_file = "./lib/img/" . $image;
+
+      move_uploaded_file($file["tmp_name"], $target_file);
+
+      $arr = array(
+        "product_name" => $_POST['name'],
+        "product_price" => $_POST['price'],
+        "product_des" =>  $_POST['description'],
+        "product_quantity" => $_POST['quantity'],
+        "category_id" => $_POST['category'],
+        "product_img" => $image
+
+      );
+    } else {
+      // Nếu người dùng ko thực hiện sửa ảnh thì phải lấy lại ảnh cũ
+      $arr = array(
+        "product_name" => $_POST['name'],
+        "product_price" => $_POST['price'],
+        "product_des" =>  $_POST['description'],
+        "product_quantity" => $_POST['quantity'],
+        "category_id" => $_POST['category'],
+
+      );
+    }
+    // $arr = array(
+    //   "product_name" => $_POST['name'],
+    //   "product_price" => $_POST['price'],
+    //   "product_des" =>  $_POST['description'],
+    //   "product_quantity" => $_POST['quantity'],
+    //   "category_id" => $_POST['category'],
+
+
+    // );
+    edit_product($arr, $id);
   }
   header('location:index.php?controller=product&action=index&page=1');
 }
@@ -93,4 +123,3 @@ function product_delete($id)
   delete_product($id);
   comeback_page();
 }
-

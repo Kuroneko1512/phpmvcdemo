@@ -10,13 +10,13 @@
     }
 
   }
-  function add_user($user,$pass){
-    $sql = "INSERT INTO `users`( `username`, `password`, `role`) VALUES ('$user','$pass',0)";
+  function add_user($user,$pass,$email){
+    $sql = "INSERT INTO `users`( `username`, `password`, `email`, `role`) VALUES ('$user','$pass','$email',0)";
     pdo_excute($sql);
   }
   function get_users(){
     $sql = "SELECT * FROM `users`";
-   
+  
     $result = pdo_get_all($sql);
         return $result;
   }

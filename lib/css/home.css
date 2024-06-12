@@ -1101,7 +1101,7 @@ main {
 /* Back to Top Start*/
 .back-to-top {
     border: 2px solid transparent;
-    padding: 0.6rem 0.75rem;
+    padding: 0.6rem 1rem;
     background-color: #6f42c1;
     border-color: #fff;
     border-radius: 50%;

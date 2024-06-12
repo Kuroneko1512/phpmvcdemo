@@ -8,14 +8,13 @@
                     <input type="text" class="form-control" id="name" name="name" aria-describedby="name">
                     <div id="name" class="form-text" style="color: red">Tên không được để trống</div>
                 </div>
-               
-             
+
                 <div class="mb-3">
                     <label for="price" class="form-label">Description</label>
                     <input type="text" class="form-control" id="price" name="description">
                     <div id="price" class="form-text" style="color: red">Giá không được để trống</div>
                 </div>
-              
+                
         
                 
                 <button type="submit" class="btn btn-primary" name="btnSubmit">Submit</button>
@@ -25,7 +24,7 @@
         
         
 
-           
+            
             
         </article>
 <?php } ?>

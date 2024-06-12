@@ -46,14 +46,14 @@
                                  
                                   <td>
 
-                                      <a onclick=" return confirm('ok') " href="index.php?controller=comment&action=ban&id=<?= $key['comment_id'] ?>&status=<?= $key['status'] != 0  ? 0 : 1?>" class="delete" data-toggle="modal">
-                                     
+                                    <a onclick=" return confirm('ok') " href="" class="delete" data-toggle="modal">
+                                    <!-- index.php?controller=comment&action=ban&id=<?= $key['comment_id'] ?>&status=<?= $key['status'] != 0  ? 0 : 1?> -->
                                         
-                                       <button type="button" class="btn btn-danger">
-                                        <?= $key['status'] != 0 ?  'ban' :'unban' ?>
-                                    </button>
+                                        <button type="button" class="btn btn-danger">
+                                            <?= $key['status'] != 0 ?  'ban' :'unban' ?>
+                                        </button>
                                    
-                                </a>
+                                    </a>
                                   </td>
                               </tr>
                             <?php } ?>

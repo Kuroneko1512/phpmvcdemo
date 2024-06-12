@@ -3,7 +3,7 @@
             <!-- body start -->
             <div class="body">
                     
-                <section class="product-page">
+                <!-- <section class="product-page"> -->
                     
                     <div class="content-product-area">
                         <section class="product-section">
@@ -70,7 +70,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="info-tab">
+                            <!-- <div class="info-tab">
                                 <div class="nav-tabs">
                                     <a href="#" class="tab-link active">Thông tin sản phẩm</a>
                                     <a href="#" class="tab-link">Bình luận và đánh giá</a>
@@ -83,14 +83,14 @@
                                         <p>Nội dung bình luận và đánh giá tại đây...</p>
                                     </div>
                                 </div>
-                            </div>
+                            </div> -->
                         </section>
                     </div>
 
                 </section>
             
                 
-                <!-- Services start -->
+                <!-- Services start
                 <section class="services">
                     <div class="services-container">
                         <div class="service">
@@ -118,16 +118,16 @@
                             <h5 class="service-heading">24/7 Support</h5>
                         </div>
                     </div>
-                </section>
+                </section> -->
                 <!-- Services end -->
                 
             </div>
             <!-- body end -->
             
-          
+        
 
         </main>
-        <main>
+        <!-- <main>
                     <div class="body">
                     <div class="info-tab">
                                 <div class="nav-tabs">
@@ -144,6 +144,6 @@
                                 </div>
                             </div>
                     </div>
-                </main>
+                </main> -->
    
 <?php } ?>

@@ -40,7 +40,7 @@ function user_login()
         }
       
         
-     
+      
       } else {
         header("Location:index.php?controller=user&action=loginView");
       }
@@ -56,7 +56,7 @@ function user_logout()
 }
 function user_registerView()
 {
-  echo render_register();
+  // echo render_register();
 }
 function user_register()
 {
@@ -68,8 +68,13 @@ function user_register()
 
     $pass = $_POST['password'];
 
+    $email = $_POST['email'];
+
+    // var_dump($user,$pass,$email);
+    // die();
+
     if (!empty($user) && !empty($pass)) {
-      add_user($user,$pass);
+      add_user($user,$pass,$email);
       header('Location:index.php?controller=user&action=loginView');
 
     }
@@ -78,7 +83,7 @@ function user_register()
 function user_lists(){
   Authen();
   $data = get_users();
- 
+  
   $limit = 5; // Số sản phẩm trên mỗi trang
   $total = count($data); // Tổng số sản phẩm
   $pages = ceil($total / $limit);

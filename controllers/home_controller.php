@@ -17,18 +17,18 @@ require "./controllers/comment_controller.php";
     $data = get_products();
     $data_cate = get_cate();
     $top_products = array_slice($data, 0, 16);
-     echo render_product($top_products,$data_cate);
+        echo render_product($top_products,$data_cate);
 
-     echo render_products($data,$data_cate);
+        // echo render_products($data,$data_cate);
 
     }
     function home_details($id) {
 
         $data = get_product($id);
         $data_comment = get_comment($id);
-       render_product_details($data);
-       render_comment_details($id);
-       render_comment($data_comment);
+        render_product_details($data);
+        render_comment_details($id);
+        render_comment($data_comment);
     }
     function home_cate($id){
 
@@ -39,5 +39,5 @@ require "./controllers/comment_controller.php";
     function home_cart(){
         render_cart();
     }
-   
+
 ?>

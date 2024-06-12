@@ -2,9 +2,10 @@
 
 function pdo_contection()
 {
-    $servername = "127.0.0.1";
+    $servername = "localhost";
     $username = "root";
-    $database = "hung_du_an_mau";
+    // $database = "wd19204_hungttph47401";
+    $database = "test";
     // Tạo kết nối
     try {
         $conn = new PDO("mysql:host=$servername;dbname=$database", $username);
@@ -21,8 +22,13 @@ function pdo_get_all($sql)
         $stmt = $conn->prepare($sql);
         $stmt->execute();
         $data = $stmt->fetchAll();
-        // var_dump($data);
-
+        
+        // foreach ($data as $row) {
+        //     echo "<pre>";
+        //     print_r($row);  
+        //     echo "</pre>";
+        // }
+        // die();
         return $data;
     } catch (PDOException $e) {
         throw $e;
